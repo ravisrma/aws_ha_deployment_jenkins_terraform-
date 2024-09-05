@@ -1,7 +1,7 @@
-resource "aws_key_pair" "my_key" {
-    key_name = var.key_name
-    public_key = file("ssh-keys/my-terraform-key.pub")
-}
+#resource "aws_key_pair" "my_key" {
+#   key_name = var.key_name
+#    public_key = file("ssh-keys/my-terraform-key.pub")
+#}
 resource "aws_launch_template" "mylaunchtemplate" {
     name = var.launch_template_name
     image_id = var.ami_id
